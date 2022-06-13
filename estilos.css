@@ -4,58 +4,15 @@
     font-weight: 600;
 }
 
-.caja-contain{
-    margin: 25px;
-    width: 500px;
-    height: 2450px;
-  
-    
-}
-.caja-contain img {
-   height: 100%;
-   width: 100%;
-   border: 3px solid red;
-   object-fit: contain;
-}
- 
-.caja-cover {
-margin: 25px;
-width: 500px;
-height: 400px;
-}
-.caja-cover img {
-    height: 100%;
-    width: 100%;
-    border: 2px solid red;
-    object-fit: cover;
-    object-position: right;
-    /*en la position se usa left right, top, bottom y medidas rem , em, px, etc*/
-
+.caja {
+    margin: 45px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid red;
+    background: pink;
+    cursor: pointer;
 }
 
-.caja-none {
-    margin: 25px;
-    width: 500px;
-    height: 400px;
-
-}
-.caja-none img {
-    width: 100%;
-    height: 100%;
-    border: 3px solid red;
-    object-fit: none;
-}
-
-.caja-scaledown {
-    margin: 25px;
-    width: 570px;
-    height: 600px;
-
-}
-.caja-scaledown img {
-    width: 100%;
-    height: 100%;
-    border: 3px solid red;
-    object-fit: scale-down;
-
+.caja:active {
+    cursor: copy;
 }
