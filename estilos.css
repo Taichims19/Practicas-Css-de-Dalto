@@ -28,6 +28,8 @@ height: 400px;
     width: 100%;
     border: 2px solid red;
     object-fit: cover;
+    object-position: right;
+    /*en la position se usa left right, top, bottom y medidas rem , em, px, etc*/
 
 }
 
