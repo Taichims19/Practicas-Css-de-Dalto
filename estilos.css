@@ -3,99 +3,26 @@
     font-size: 16px;
     font-weight: 600;
 }
-
-.nav__responsive-ul {
-    display: none;
+.flex-container {
+    display: flex;
+ 
+    height: 100vh;
+    
 }
-.nav {
-    background-color: blueviolet;
-}
-.nav__li {
-    display: inline-block;
-    padding: 12px;
-    color: #FFF;
-}
-.nav__li a {
+.flex-item {
+    background-color: #248;
     color: #fff;
-    text-decoration: none;
+    height: 100px;
+    min-width: 150px;
+    text-align: center; 
+    flex-grow: 1;
+    width: 300px;
 }
-.nav__li:hover {
-    background-color: brown;
-    
+.orange {
+    background-color: orange;
+    flex-basis: 350px;
+    flex-shrink: 0;
 }
-.nav__li:hover > a {
-    color: azure;
-    
-}
-.nav__li a::selection {
-    color: aqua;
-}
-.nav__li i {
-    width: 30px;
-    box-sizing: border-box;
-    text-align: right;
-    margin-right: 5px;   
-}
-.nav__responsive-buttom-container {
-    position: absolute;
-    width: 100%;
-    background-color: #69c;
-    margin-top: -64px;
-    z-index: 100;
-}
-.nav__responsive-buttom {
-   
-    font-size: 25px;
-    padding: 6px 20px;
-    text-align: right;
-    width: 100%;
-}
-@media only screen and (max-width: 900px) {
-    .nav__ul {
-        display: none;
-    }
-    .nav {
-        height: 37px;
-        width: 100%;
-        background-color: #48e;
-    }
-    .nav__responsive-ul {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 37px;
-        margin-top: 37px;
-        padding-top: 27px;
-        
-    }
-    .nav__li-container {
-        position: relative;
-        top: -1000px;
-        height: calc(100vh - 64px);
-        width: 75%;
-        background-color: #9bf;
-        transition: all 1s;
-        z-index: 1;
-        padding: 37px;
-    }
-    .nav__responsive-li {
-        width: 100%;
-        padding: 12px 20px;
-        background-color: #9bf;
-        
-    }
-    .nav__responsive-li i {
-        box-sizing: border-box;
-        text-align: center;
-        margin: 5px;
-        width: 30px;
-        color: #016;
-    }
-    .nav__responsive-li a {
-        color: #016;
-        text-decoration: none;
-    }
-    .nav__responsive-ul:hover > .nav__li-container {
-        top: -27px;
-    }
+.red {
+    background-color: red;
 }
