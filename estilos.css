@@ -3,26 +3,25 @@
     font-size: 16px;
     font-weight: 600;
 }
+
 .flex-container {
     display: flex;
- 
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     height: 100vh;
-    
+    align-content: flex-end;
 }
 .flex-item {
     background-color: #248;
-    color: #fff;
-    height: 100px;
-    min-width: 150px;
-    text-align: center; 
-    flex-grow: 1;
-    width: 300px;
+    color: #FFF;
+    margin: 5px;
+    height: 120px;
+    min-width: 120px;
+    text-align: center;
 }
 .orange {
     background-color: orange;
-    flex-basis: 350px;
-    flex-shrink: 0;
 }
-.red {
-    background-color: red;
+.green {
+    background-color: green;
 }
