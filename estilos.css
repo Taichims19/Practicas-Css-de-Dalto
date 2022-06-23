@@ -4,92 +4,28 @@
     font-weight: 600;
 }
 body {
-    background-color: #ccc;
+    background: radial-gradient(circle, #FFA9B8,#A856E1);
+    padding: 15px;
 }
-
-.flex-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #333;
-    margin: 50px 50px;
-    padding: 20px;
-    border: 8px solid #000;
-    outline: 5px solid #072;
-    
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,150px)1fr 1fr;
+    grid-template-rows: repeat(3,150px);
+    border: 3px solid #000;
+    grid-gap: 10px;
+    background: #bbb;
+ 
 }
-
-.form {
-    min-width: 400px;
-    flex: 1;
-    text-align: center;
-    padding: 30px;
-    order: 5;
-
+.grid-item {
+    border: 1px solid #000;
+    background-color: aquamarine;
 }
-.form__input {
-    width: 100%;
-    padding: 7px;
-    margin: 6px 0;
-    border: none;
-    border-bottom: 3px solid #1c7;
-    background-color: transparent;
-    color: #fff;
+.grid-item:first-child {
+    grid-column: 1 / 3;
+    grid-row: 1 /span 2;
+    background-color: #900;
 }
-.form__input:focus {
-    background: linear-gradient(to bottom, transparent, #222);
-    outline: none;
-    border-bottom: 3px solid #5f9;
-}
-.form textarea {
-    min-height: 150px;
-    resize: none;
-}
-
-.form-img {
-    flex: 1;
-    display: flex;
-    padding: 10px;
-    min-width: 300px;
-    max-width: 400px;
-    order: 2;
-    background-color: blue;
-}
-.form-img div {
-    padding: 10px;
-    background-color: #66f;
-   
-}
-
-.img-container {
-    margin: auto;
-}
-.img-container div {
-    background-color: #ccc;
-    border-radius: 50%;
-    text-align: center;
-    padding: 40px;
-}
-
-.form-img img {
-    width: 90%;
-    margin: auto;
-}
-
-.form__input[type="submit"] {
-    background-color: #094;
-    border-bottom: none;
-    padding: 12px;
-}
-.form__input[type="submit"]:hover {
-    background-color: #072;
-    border-bottom: none;
-    padding: 12px;
-}
-.form__input[type="submit"]:focus {
-    background-color: #094;
-}
-.form__input[type="submit"]:active {
-    background: linear-gradient(to bottom, #094,  #050);
+.grid-item:nth-child(2) {
+    background-color: #A856E1;
+    grid-column: 3 / 5;
 }
