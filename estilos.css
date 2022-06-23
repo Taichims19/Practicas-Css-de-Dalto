@@ -15,6 +15,8 @@ body {
     background-color: #333;
     margin: 50px 50px;
     padding: 20px;
+    border: 8px solid #000;
+    outline: 5px solid #072;
     
 }
 
@@ -24,6 +26,7 @@ body {
     text-align: center;
     padding: 30px;
     order: 5;
+
 }
 .form__input {
     width: 100%;
@@ -55,7 +58,7 @@ body {
 }
 .form-img div {
     padding: 10px;
-    background-color: red;
+    background-color: #66f;
    
 }
 
