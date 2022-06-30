@@ -1,0 +1,31 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+body {
+    background: radial-gradient(circle, #FFA9B8,#A856E1);
+    padding: 15px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,150px)1fr 1fr;
+    grid-template-rows: repeat(3,150px);
+    border: 3px solid #000;
+    grid-gap: 10px;
+    background: #bbb;
+ 
+}
+.grid-item {
+    border: 1px solid #000;
+    background-color: aquamarine;
+}
+.grid-item:first-child {
+    grid-column: 1 / 3;
+    grid-row: 1 /span 2;
+    background-color: #900;
+}
+.grid-item:nth-child(2) {
+    background-color: #A856E1;
+    grid-column: 3 / 5;
+}
