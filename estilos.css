@@ -12,27 +12,32 @@
   height: 80px;
   width: 80px;
   margin: 30px;
-  transition-property: left, background ;
-  transition-duration: 3s;
   position: relative;
-  left: 0;
+  animation-name: desplazarse;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
-.container:hover > .caja {
-    left: 80%;
+@keyframes desplazarse {
+    /* from {
+        left: 0;
+        position: relative;
+    }
+    to {
+        left: 80%;
+    } */
+    0% {
+        background: #025;
+        left: 0;
+    }
+    50% {
     background: red;
+    }
+    100% {
+        background: green;
+        left: 100%;
+    }
 }
-.caja:first-child {
-  transition-timing-function: linear;
-}
-.caja:nth-child(2) {
-  transition-timing-function: ease;
-}
-.caja:nth-child(3) {
-  transition-timing-function: ease-in;
-}
-.caja:nth-child(4) {
-  transition-timing-function: ease-out;
-}
-.caja:nth-child(5) {
-  transition-timing-function: ease-in-out;
-}
+
