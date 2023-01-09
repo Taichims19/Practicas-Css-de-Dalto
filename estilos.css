@@ -1,82 +1,38 @@
 * {
-    font-family: 'Sen', sans-serif;
-    font-weight: 600;
-    margin: 0;
+  font-family: "Sen", sans-serif;
+  font-weight: 600;
+  margin: 0;
 }
-.content {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.container {
+  background: #86f;
+  padding: 20px 5px;
 }
-
-.header, .main, .aside, .footer {
-    padding: 20px;
+.caja {
+  background: #025;
+  height: 80px;
+  width: 80px;
+  margin: 30px;
+  transition-property: left, background ;
+  transition-duration: 3s;
+  position: relative;
+  left: 0;
 }
-.header {
-    background-color: lightblue;
-    height: 60px;
+.container:hover > .caja {
+    left: 80%;
+    background: red;
 }
-.main {
-    background-color: slateblue;
-    flex-basis: 300px; 
-    flex-grow: 2;
-    flex-shrink: 0;
+.caja:first-child {
+  transition-timing-function: linear;
 }
-.aside {
-    background-color: darkslateblue;
-    flex-basis: 200px;
-    flex-grow: 1;
-    flex-shrink: 0;
+.caja:nth-child(2) {
+  transition-timing-function: ease;
 }
-.footer {
-    background-color: violet;
-    flex-grow: 1;
+.caja:nth-child(3) {
+  transition-timing-function: ease-in;
 }
-
-@media screen and (min-width: 900px) {
-    /* .content {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .main, .aside {
-        height: 530px;
-    }
-    .main {
-        flex-grow: 4;
-    }
-    .aside {
-        flex-grow: 1;
-    }
-
-    .header {
-        flex-basis: 100%;
-        max-height: 60px;
-    }
-    .footer {
-        flex-basis: 100%;
-    } con display flex */
-    .content {
-       display: grid;
-       grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
-       grid-template-columns: repeat(3,1fr);
-    }
-    .header {
-        grid-column: 1 / span 3;
-    }
-    .main, .aside {
-       
-    }
-    .main {
-        grid-row: 2 / 6;
-        grid-column: 1 / span 2;
-    }
-    .aside {
-       grid-row: 2 / 6;
-       
-    }
-
-    .footer {
-    grid-rows: 6 / 7;
-    grid-column: 1 / span 3;        
-    }
+.caja:nth-child(4) {
+  transition-timing-function: ease-out;
+}
+.caja:nth-child(5) {
+  transition-timing-function: ease-in-out;
 }
