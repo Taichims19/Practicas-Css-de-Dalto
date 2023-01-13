@@ -12,32 +12,20 @@
   height: 80px;
   width: 80px;
   margin: 30px;
-  position: relative;
-  animation-name: desplazarse;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+  display: flex;
+  color: #fff;
+  transition: transform 1s;
+  transform: translate(50px);
+  transform: skew(30deg);
+  /* la propiedad translate que tenga fuera del hover se conserva normal  */
 }
-@keyframes desplazarse {
-    /* from {
-        left: 0;
-        position: relative;
-    }
-    to {
-        left: 80%;
-    } */
-    0% {
-        background: #025;
-        left: 0;
-    }
-    50% {
-    background: red;
-    }
-    100% {
-        background: green;
-        left: 100%;
-    }
+.caja:hover {
+  /* transform: scaleX(1.8) translate(50px); */
+  /* las propiedad translate del hover es ajena completamente a la del elemento caja  */
+}
+
+b {
+  margin: auto;
+  transform: skew(-30deg);
 }
 
