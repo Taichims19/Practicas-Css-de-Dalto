@@ -5,17 +5,14 @@
 }
 .container {
   background: #86f;
-  padding: 20px 5px;
-  width: 250px;
+  padding: 30px;
+  width: 350px;
   height: 220px;
   margin: 40px;
-  border: 20px solid transparent;
   background-image: url(https://i.pinimg.com/originals/53/bd/0b/53bd0b3f2a8e0babd1b8adfe551c1b33.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-clip: content-box;
-  /* la diferencia entre clip y origin es que clip empieza la img a partir de cada propiedad que se selecciones, border, padding o content . y en origin el parte desde donde empezaria cada propiedad border, padding , content  */
-
+  background-size: cover;
+  background-attachment: fixed;
+background-attachment: sirve para dejar fijos o que hagan scrool cualquier imagen que pongamos de fondo
 
 }
 
