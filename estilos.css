@@ -3,16 +3,22 @@
   font-weight: 600;
   margin: 0;
 }
-.container {
-  background: #86f;
-  padding: 30px;
-  width: 350px;
-  height: 220px;
-  margin: 40px;
-  background-image: url(https://i.pinimg.com/originals/53/bd/0b/53bd0b3f2a8e0babd1b8adfe551c1b33.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-background-attachment: sirve para dejar fijos o que hagan scrool cualquier imagen que pongamos de fondo
 
+:root {
+  --color-rojo-claro: #f44 ;
+  --color-azul-claro: #66f;
+}
+
+div {
+  padding: 30px;
+  height: 150px;
+  width: 150px;
+  margin: 30px;
+}
+.container {
+  background: var(--color-rojo-claro);
+}
+.container2 {
+  background: var(--color-azul-claro);
 }
 
