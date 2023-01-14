@@ -4,21 +4,20 @@
   margin: 0;
 }
 
-:root {
-  --color-rojo-claro: #f44 ;
-  --color-azul-claro: #66f;
-}
 
-div {
-  padding: 30px;
-  height: 150px;
-  width: 150px;
-  margin: 30px;
-}
 .container {
-  background: var(--color-rojo-claro);
-}
-.container2 {
-  background: var(--color-azul-claro);
+filter: blur(2px) brightness(1.) contrast(1.3) drop-shadow(10px 10px 10px #444) grayscale(0.01) hue-rotate(40deg) invert(0.01) opacity(0.97) saturate(130%) sepia(1) ;
 }
 
+.conatiner-2 {
+
+}
+.caja {
+  --redchido: #f44
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: var(--redchido);
+  border-radius: 50%;
+}
+ 
