@@ -6,18 +6,40 @@
 
 
 .container {
-filter: blur(2px) brightness(1.) contrast(1.3) drop-shadow(10px 10px 10px #444) grayscale(0.01) hue-rotate(40deg) invert(0.01) opacity(0.97) saturate(130%) sepia(1) ;
-}
+filter: contrast(30);
+background-color: #fff;
+}       
 
-.conatiner-2 {
 
-}
 .caja {
-  --redchido: #f44
+  --red-chido: #f44; 
   display: inline-block;
   width: 150px;
   height: 150px;
-  background: var(--redchido);
+  background: var(--red-chido);
+  margin: 40px;
   border-radius: 50%;
+  filter: blur(2px);
 }
- 
+.caja:first-child {
+  
+  animation: trasladar 3s alternate infinite;
+
+}
+ @keyframes trasladar {
+  0% {
+    background: blue;
+    transform: translate(0);
+  }
+  20% {
+    
+    left: 80px;
+  }
+  50% {
+   
+    left: 120px;
+  }
+  100% {
+    transform: translate(160px);
+  } 
+ }
