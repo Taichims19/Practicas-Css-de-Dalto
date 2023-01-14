@@ -6,26 +6,16 @@
 .container {
   background: #86f;
   padding: 20px 5px;
-}
-.caja {
-  background: #025;
-  height: 80px;
-  width: 80px;
-  margin: 30px;
-  display: flex;
-  color: #fff;
-  transition: transform 1s;
-  transform: translate(50px);
-  transform: skew(30deg);
-  /* la propiedad translate que tenga fuera del hover se conserva normal  */
-}
-.caja:hover {
-  /* transform: scaleX(1.8) translate(50px); */
-  /* las propiedad translate del hover es ajena completamente a la del elemento caja  */
-}
+  width: 250px;
+  height: 220px;
+  margin: 40px;
+  border: 20px solid transparent;
+  background-image: url(https://i.pinimg.com/originals/53/bd/0b/53bd0b3f2a8e0babd1b8adfe551c1b33.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  /* la diferencia entre clip y origin es que clip empieza la img a partir de cada propiedad que se selecciones, border, padding o content . y en origin el parte desde donde empezaria cada propiedad border, padding , content  */
 
-b {
-  margin: auto;
-  transform: skew(-30deg);
+
 }
 
