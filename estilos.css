@@ -2,44 +2,21 @@
   font-family: "Sen", sans-serif;
   font-weight: 600;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 
 .container {
-filter: contrast(30);
-background-color: #fff;
+padding: 20px;
+background: #59f;
+font-size: 22px;
+direction: ltr;
+letter-spacing: 10px;
 }       
-
-
-.caja {
-  --red-chido: #f44; 
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  background: var(--red-chido);
-  margin: 40px;
-  border-radius: 50%;
-  filter: blur(2px);
-}
-.caja:first-child {
+#content {
+  background: red;
+  user-select: none;
+  text-shadow: 0px 0px 5px #fff;
   
-  animation: trasladar 3s alternate infinite;
-
 }
- @keyframes trasladar {
-  0% {
-    background: blue;
-    transform: translate(0);
-  }
-  20% {
-    
-    left: 80px;
-  }
-  50% {
-   
-    left: 120px;
-  }
-  100% {
-    transform: translate(160px);
-  } 
- }
+
